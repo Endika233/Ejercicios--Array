@@ -236,10 +236,44 @@ namespace ConsoleApp1
             ///
 
 
+            ////Cargar una tabla de 20 componentes enteros y calcular la suma de los componentes de posición par y  
+            ////el producto(multipli) de los componentes de posición impar. 
+            ////Los valores se generarán aleatoriamente entre 1 y 100.
+            //int[] array = new int[20];
+            //int par = 0, impar = 1;////Como a impar luego lo vamos a multiplicar si pusieramos 0 aqui se quedaria en cero
+            //Random random = new Random();//ASI SE DECLARA UN NUMERO ALEATORIO
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    array[i] = random.Next(1, 100);
+            //    if (i % 2 == 0)
+            //    {
+            //        par = par + array[i];
+            //    }
+            //    else
+            //    {
+            //        impar = impar * array[i];
+            //    }
+            //}
+            //for (int j = 0; j < array.Length; j++)
+            //{
+            //    Console.WriteLine(j + "\t" + array[j]);
+            //}
+            //Console.WriteLine("PAR=" + par + "\tIMPAR=" + impar);
 
 
 
-            
+            //Cargar una tabla de 20 elementos donde cada elemento almacenará un valor entre 1 y 9 
+            //(genéralos de forma aleatoria) y escribir, además del contenido de la tabla, la cantidad de 1,
+            //cantidad de 2, cantidad de 3…, cantidad de 9 almacenados en ella. 
+            int[] array = new int[20];
+            Random random = new Random();//random declarado
+            for (int i = 0; i < array.Length; i++)
+            {
+                array[i] = random.Next(1, 10);
+            }
+
+
+
 
             Console.ReadKey();
 
