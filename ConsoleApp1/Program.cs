@@ -283,7 +283,7 @@ namespace ConsoleApp1
             Console.WriteLine("\t\tTABLA EQUIVALENCIAS");
             for(int k = 1; k <= arrayNum.Length; k++)
             {
-                Console.WriteLine(k + "\t" +arrayNum[k]);
+                Console.WriteLine(k + "\t" +arrayNum[k-1]);//HAY QUE RESTAR OTRA VEZ
             }
          
 
