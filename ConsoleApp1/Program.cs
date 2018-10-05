@@ -86,6 +86,7 @@ namespace ConsoleApp1
             ////Crear un array de 3 ints. Usar un for para pedir al usuario que introduzca valores 
             ////a cada una de las posiciones. Mirar los valores del array una vez tenga los 3 valores 
             ////y mostrar en pantalla el más pequeño.
+            //////////************************Si creamos un comparador de un número muy bajo o muy alto y hacemos que se compare con todos los numeros en un for, solo cogerla el valor del mas bajo o algo.
             //int[] arrayNums = new int[3];
             //Console.WriteLine("Introduzca un valor");
             //arrayNums[0] = Int32.Parse(Console.ReadLine());
@@ -137,14 +138,37 @@ namespace ConsoleApp1
 
 
 
-            //Hacer la media de 10 valores utilizando un array.
+            ////Hacer la media de 10 valores utilizando un array.
+            //int[] media = { 6, 4, 8, 2 };
+            //int suma = 0;
+            //for(int i = 0; i < media.Length; i++)
+            //{
+            //    suma = suma + media[i];
+            //}
+            //Console.WriteLine("La media es " + suma / media.Length);
+
+
+
+            //Crear un array de 11 ints. Usar un for para asignar 0 a cada posición. 
+            //Pedir al usuario que introduzca valores entre 0 y 10. 
+            //Cada vez que introduzca un dígito, añadir uno al valor en esa posición del array. 
+            //Si por ejemplo introduce un 3, sumar uno a la posición 3. Mostrar en pantalla los valores. 
+            //Si introduce un número mayor que 10, decir que ese número es incorrecto. 
+            //Si introduce un número negativo, mostrar en pantalla el número de cada posición y el valor que contiene. 
+            int[] array = new int[11];
+            int numIn=0;
+            for(int i = 0; i < array.Length; i++)
+            {
+                array[i] = 0;
+            }
 
 
 
 
+            do
+            {
 
-
-
+            } while (numIn < 0 || numIn > 11);
 
 
 
