@@ -321,13 +321,15 @@ namespace ConsoleApp1
                     Console.WriteLine("Solo se aceptan valores del 1 al 10, vuelva a intentarlo");
                     arrayNot[j] = Int32.Parse(Console.ReadLine());
                 }
-                if{
-
-                }
-                if{
-                    //PARTE NOTA MINIMA Y MAXIMA
-                }
-                mediaSum = mediaSum + arrayNot[j];
+                if(arrayNot[j]>max)
+                    {
+                    max = arrayNot[j];
+                    }
+                if(arrayNot[j]<min)
+                    {
+                    min = arrayNot[j];
+                    }
+            mediaSum = mediaSum + arrayNot[j];
             }
             media = mediaSum / alum;
             Console.WriteLine("Alumnos que superan la media:");
@@ -335,23 +337,23 @@ namespace ConsoleApp1
             {
                 if (arrayNot[k]>media)
                 {
-                    Console.WriteLine(arrayNom[k] + " " + arrayApe1 + " " + arrayApe2);
+                    Console.WriteLine(arrayNom[k] + " " + arrayApe1[k] + " " + arrayApe2[k]);
                 }
             }
-            Console.WriteLine("Alunos con la nota máxima");
+            Console.WriteLine("Alumnos con la nota máxima");
             for(int l = 0; l < alum; l++)
             {
                 if (arrayNot[l] == max)
                 {
-                    Console.WriteLine(arrayNom[l] + " " + arrayApe1 + " " + arrayApe2);
+                    Console.WriteLine(arrayNom[l] + " " + arrayApe1[l] + " " + arrayApe2[l]);
                 }
             }
-            Console.WriteLine("Alunos con la nota mínima");
+            Console.WriteLine("Alumnos con la nota mínima");
             for (int m = 0; m < alum; m++)
             {
                 if (arrayNot[m] == min)
                 {
-                    Console.WriteLine(arrayNom[m] + " " + arrayApe1 + " " + arrayApe2);
+                    Console.WriteLine(arrayNom[m] + " " + arrayApe1[m] + " " + arrayApe2[m]);
                 }
                    
             }
