@@ -266,18 +266,27 @@ namespace ConsoleApp1
             //(genéralos de forma aleatoria) y escribir, además del contenido de la tabla, la cantidad de 1,
             //cantidad de 2, cantidad de 3…, cantidad de 9 almacenados en ella. 
             int[] array = new int[20];
+            int[] arrayNum = new int[9];
             Random random = new Random();//random declarado
             for (int i = 0; i < array.Length; i++)
-            {
+            {           
                 array[i] = random.Next(1, 10);
+                for(int j = 1; j <= arrayNum.Length; j++)
+                {
+                    if (array[i] == j)
+                    {
+                        arrayNum[j-1] = arrayNum[j-1] + 1;
+                    }
+                }
+                Console.WriteLine(i+"\t"+array[i]);
             }
-
+         
 
 
 
             Console.ReadKey();
 
-
+      
         }
     }
 }
