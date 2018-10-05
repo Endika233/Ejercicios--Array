@@ -173,7 +173,7 @@ namespace ConsoleApp1
             //        }
             //    else if (numIn < 11 && numIn >= 0)
             //        {
-            //            array[numIn] = array[numIn] + 1;
+            //            array[numIn] = array[numIn] + 1;// o solo escribir array[numIn]++
             //        }
             //} while (numIn > 0 );//Ejecuta mientras eso sea cierto
 
@@ -262,30 +262,102 @@ namespace ConsoleApp1
 
 
 
-            //Cargar una tabla de 20 elementos donde cada elemento almacenará un valor entre 1 y 9 
-            //(genéralos de forma aleatoria) y escribir, además del contenido de la tabla, la cantidad de 1,
-            //cantidad de 2, cantidad de 3…, cantidad de 9 almacenados en ella. 
-            int[] array = new int[20];
-            int[] arrayNum = new int[9];
-            Random random = new Random();//random declarado
-            for (int i = 0; i < array.Length; i++)
-            {           
-                array[i] = random.Next(1, 10);
-                for(int j = 1; j <= arrayNum.Length; j++)
-                {
-                    if (array[i] == j)
-                    {
-                        arrayNum[j-1] = arrayNum[j-1] + 1;//HAY QUE RESTAR 1 PORQUE EMPIEZA EN 1 Y NO 0                        
-                    }
-                }
-                Console.WriteLine(i+"\t"+array[i]);
-            }
-            Console.WriteLine("\t\tTABLA EQUIVALENCIAS");
-            for(int k = 1; k <= arrayNum.Length; k++)
+            ////Cargar una tabla de 20 elementos donde cada elemento almacenará un valor entre 1 y 9 
+            ////(genéralos de forma aleatoria) y escribir, además del contenido de la tabla, la cantidad de 1,
+            ////cantidad de 2, cantidad de 3…, cantidad de 9 almacenados en ella. 
+            //int[] array = new int[20];
+            //int[] arrayNum = new int[9];
+            //Random random = new Random();//random declarado
+            //for (int i = 0; i < array.Length; i++)
+            //{           
+            //    array[i] = random.Next(1, 10);
+            //    for(int j = 1; j <= arrayNum.Length; j++)
+            //    {
+            //        if (array[i] == j)
+            //        {
+            //            arrayNum[j-1] = arrayNum[j-1] + 1;//HAY QUE RESTAR 1 PORQUE EMPIEZA EN 1 Y NO 0                        
+            //        }
+            //    }
+            //    Console.WriteLine(i+"\t"+array[i]);
+            //}
+            //Console.WriteLine("\t\tTABLA EQUIVALENCIAS");
+            //for(int k = 1; k <= arrayNum.Length; k++)
+            //{
+            //    Console.WriteLine(k + "\t" +arrayNum[k-1]);//HAY QUE RESTAR OTRA VEZ
+            //}
+
+
+            //Cargar dos tablas, una con los nombres y otra con las calificaciones de los N alumnos de una clase de Progr. 
+            //Rellenar arrays con el nombre del alumno y su nota validando entre 0 y 10.
+            //Calcular la media de la clase
+            //Escribir los alumnos cuya nota es mayor que la media.
+            //Calcular la nota máxima y quienes la han conseguido
+            //Calcular la nota mínima y quienes la han conseguido
+            //Mostrar la lista de alumnos junto con su nota correspondiente: 
+            //Nombre1 Apellido11 Apellido12 - Nota
+            //Nombre2 Apellido21 Apellido22 - Nota
+            int alum,num=0,mediaSum=0,media,max=-10,min=20;
+            Console.WriteLine("¿Cuantos alumnos hay en clase?");
+            alum=Int32.Parse(Console.ReadLine());//Como alum condiciona el largo de los arrays hay que ponerle valor antes
+            int[] arrayNot = new int[alum];
+            Random random = new Random();
+            string[] arrayNom = new string[alum];
+            string[] arrayApe1 = new string[alum];
+            string[] arrayApe2 = new string[alum];
+            for(int i = 0; i < alum; i++)
             {
-                Console.WriteLine(k + "\t" +arrayNum[k-1]);//HAY QUE RESTAR OTRA VEZ
+                arrayNom[i] = "Nombre"+num;
+                arrayApe1[i] = "Apellido" + num + "1";
+                arrayApe2[i] = "Apellido" + num + "2";
+                num = num + 1;             
             }
-         
+            for(int j = 0; j < alum; j++)
+            {
+                Console.WriteLine("Introduzca la nota del alumno (va aleatorio)");
+                Console.ReadLine();
+                arrayNot[j] = random.Next(0, 11);
+                while(arrayNot[j]<0||arrayNot[j]>10)
+                {
+                    Console.WriteLine("Solo se aceptan valores del 1 al 10, vuelva a intentarlo");
+                    arrayNot[j] = Int32.Parse(Console.ReadLine());
+                }
+                if{
+
+                }
+                if{
+                    //PARTE NOTA MINIMA Y MAXIMA
+                }
+                mediaSum = mediaSum + arrayNot[j];
+            }
+            media = mediaSum / alum;
+            Console.WriteLine("Alumnos que superan la media:");
+            for(int k = 0; k < alum; k++)
+            {
+                if (arrayNot[k]>media)
+                {
+                    Console.WriteLine(arrayNom[k] + " " + arrayApe1 + " " + arrayApe2);
+                }
+            }
+            Console.WriteLine("Alunos con la nota máxima");
+            for(int l = 0; l < alum; l++)
+            {
+                if (arrayNot[l] == max)
+                {
+                    Console.WriteLine(arrayNom[l] + " " + arrayApe1 + " " + arrayApe2);
+                }
+            }
+            Console.WriteLine("Alunos con la nota mínima");
+            for (int m = 0; m < alum; m++)
+            {
+                if (arrayNot[m] == min)
+                {
+                    Console.WriteLine(arrayNom[m] + " " + arrayApe1 + " " + arrayApe2);
+                }
+                   
+            }
+
+
+
 
 
 
