@@ -152,25 +152,46 @@ namespace ConsoleApp1
             //Crear un array de 11 ints. Usar un for para asignar 0 a cada posición. 
             //Pedir al usuario que introduzca valores entre 0 y 10. 
             //Cada vez que introduzca un dígito, añadir uno al valor en esa posición del array. 
-            //Si por ejemplo introduce un 3, sumar uno a la posición 3. Mostrar en pantalla los valores. 
+            //Si por ejemplo introduce un 3, sumar uno a la posición 3.
             //Si introduce un número mayor que 10, decir que ese número es incorrecto. 
             //Si introduce un número negativo, mostrar en pantalla el número de cada posición y el valor que contiene. 
-            int[] array = new int[11];
-            int numIn=0;
-            for(int i = 0; i < array.Length; i++)
-            {
-                array[i] = 0;
-            }
+            //int[] array = new int[11];
+            //int numIn=0;
+            //for(int i = 0; i < array.Length; i++)
+            //{
+            //    array[i] = 0;
+            //}
+    
+            
+            //do
+            //{
+            //    Console.WriteLine("Introduzca un valor del 0 al 10");
+            //    numIn = Int32.Parse(Console.ReadLine());
+            //    if (numIn > 10)
+            //        {
+            //            Console.WriteLine("\nEse número es incorrecto, introduzca otro número\n");
+            //        }
+            //    else if (numIn < 11 && numIn >= 0)
+            //        {
+            //            array[numIn] = array[numIn] + 1;
+            //        }
+            //} while (numIn > 0 );//Ejecuta mientras eso sea cierto
+            
+            //for(int k = 0; k < array.Length; k++)
+            //{
+            //    Console.WriteLine(k + "\t" + array[k]);//\t tabulador \n salto linea
+            //}
 
 
 
 
-            do
-            {
 
-            } while (numIn < 0 || numIn > 11);
+       
 
 
+
+
+           
 
             Console.ReadKey();
 
