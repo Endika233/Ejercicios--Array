@@ -135,8 +135,8 @@ namespace ConsoleApp1
             //        Console.WriteLine("Respuesta no válida");
             //    }
             //} while (elec<1|| elec >12);//Si alguna de las dos condiciones se cumple sera TRUE y seguira ejecutando
-
-
+            ////Si directamente hubieras puesto un while que excluyera los menores de 0 y may. de 12 te habrias ahorrado el if
+            ////y dentro de ese while "Ese num es incorrecto"
 
             ////Hacer la media de 10 valores utilizando un array.
             //int[] media = { 6, 4, 8, 2 };
@@ -161,8 +161,8 @@ namespace ConsoleApp1
             //{
             //    array[i] = 0;
             //}
-    
-            
+
+
             //do
             //{
             //    Console.WriteLine("Introduzca un valor del 0 al 10");
@@ -176,7 +176,7 @@ namespace ConsoleApp1
             //            array[numIn] = array[numIn] + 1;
             //        }
             //} while (numIn > 0 );//Ejecuta mientras eso sea cierto
-            
+
             //for(int k = 0; k < array.Length; k++)
             //{
             //    Console.WriteLine(k + "\t" + array[k]);//\t tabulador \n salto linea
@@ -184,14 +184,62 @@ namespace ConsoleApp1
 
 
 
+            ////Crear un array de 10 valores. Poner el valor 1 en cada una de la posición. 
+            ////Pedir al usuario que introduzca un número entre 0 y 9. 
+            ////Cada vez que introduzca un valor entre 0 y 9, mostrar el valor de esa posición del array,
+            ////y modificarlo multiplicando por 2.
+            //int[] array = new int[10];
+            //int num;
+            //for(int i = 0; i < array.Length; i++)
+            //{
+            //    array[i] = 1;
+            //}
+            //do
+            //{
+            //    Console.WriteLine("Introduzca un valor de 0 al 9");
+            //    num = Int32.Parse(Console.ReadLine());
+            //    if(num>=0&&num<=9)
+            //        {
+            //        array[num] = array[num] * 2;
+            //        }
+            //} while (num<10&&num>=0);
+            //for (int k = 0; k < array.Length; k++)
+            //{
+            //    Console.WriteLine(k + "\t" + array[k]);//\t tabulador \n salto linea
+            //}
 
 
-       
+            ////Programa que lee las edades de 20 alumnos (validado entre 18 y 35), 
+            ////las almacena en un array y calcula y escribe su media 
+            ////(para probar, se pueden generar aleatoriamente entre 18 y 35). 
+            //int []arrayEdad=new int[20];
+            //int edad,media=0;
+            //for(int i = 0; i < arrayEdad.Length; i++)
+            //{
+            //    Console.WriteLine("Introduzca la edad el alumno nº" + (i+1));
+            //    edad = Int32.Parse(Console.ReadLine());
+            //    while (edad < 18 || edad > 35)
+            //    {
+            //        Console.WriteLine("Edad no correcta, introduzca otra edad");
+            //        edad = Int32.Parse(Console.ReadLine());
+            //    }
+            //    arrayEdad[i] = edad;
+            //}
+            //Console.Write("La edad media de los alumnos es ");
+            //for (int j = 0; j < arrayEdad.Length; j++)
+            //{
+            //    media = arrayEdad[j] + media;
+            //}
+            //Console.WriteLine(media / arrayEdad.Length);
+            ////RANDOM:Random ((como una int)) random ((nombre variabe))=new Random();    ****Asi se declara
+            //////////int ((nombre que quieras))=random.Next(0,20);   ****Crearia un Random entre 0 y 20
+            ///
 
 
 
 
-           
+
+            
 
             Console.ReadKey();
 
