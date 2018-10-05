@@ -52,6 +52,7 @@ namespace ConsoleApp1
             //{
             //    arrayNum[i] = num;
             //    num = num - 1;
+            ////Aqui podrias poner Console.Write(arrayNum[i]);
             //}
             //for(int j = 0; j < 10; j++)
             //{
@@ -82,17 +83,63 @@ namespace ConsoleApp1
 
 
 
-            //Crear un array de 3 ints. Usar un for para pedir al usuario que introduzca valores 
-            //a cada una de las posiciones. Mirar los valores del array una vez tenga los 3 valores 
-            //y mostrar en pantalla el más pequeño.
-            int[] arrayNums = new int[3];
-            Console.WriteLine("Introduzca un valor");
-            arrayNums[0] = Int32.Parse(Console.ReadLine());
-            for (int i = 1; i < arrayNums.Length; i++)
-            {
-                Console.WriteLine("Introduza otro valor");
-                arrayNums[i] = Int32.Parse(Console.ReadLine());
-            }
+            ////Crear un array de 3 ints. Usar un for para pedir al usuario que introduzca valores 
+            ////a cada una de las posiciones. Mirar los valores del array una vez tenga los 3 valores 
+            ////y mostrar en pantalla el más pequeño.
+            //int[] arrayNums = new int[3];
+            //Console.WriteLine("Introduzca un valor");
+            //arrayNums[0] = Int32.Parse(Console.ReadLine());
+            //for (int i = 1; i < arrayNums.Length; i++)
+            //{
+            //    Console.WriteLine("Introduza otro valor");
+            //    arrayNums[i] = Int32.Parse(Console.ReadLine());
+            //}
+            //if(arrayNums[0]==arrayNums[1]&& arrayNums[1] == arrayNums[2])
+            //{
+            //    Console.WriteLine("Todos los números son iguales");
+            //}
+            //else
+            //{
+            //    Console.Write("El número más pequeño es ");
+            //    if (arrayNums[0] < arrayNums[1] && arrayNums[0] < arrayNums[2])//Acuerdate de usar && o ||, en parentesis solo no vale
+            //    {
+            //        Console.WriteLine(arrayNums[0]);
+            //    }
+            //    if (arrayNums[1] < arrayNums[0] && arrayNums[1] < arrayNums[2])
+            //    {
+            //        Console.WriteLine(arrayNums[1]);
+            //    }
+            //    if (arrayNums[2] < arrayNums[1] && arrayNums[2] < arrayNums[0])
+            //    {
+            //        Console.WriteLine(arrayNums[2]);
+            //    }
+            //}
+
+
+
+            ////Poner los nombres de los meses en un array de 12. 
+            ////Cuando el usuario introduce un número del 1 al 12, mostrar el nombre de ese mes en pantalla.
+            //int elec;
+            //string[] meses = { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" };          
+            //do
+            //{
+            //    Console.WriteLine("Introduzca un número de mes");
+            //    elec = Int32.Parse(Console.ReadLine());
+            //    if (elec < 13 && elec > 0)
+            //    {
+            //        Console.WriteLine("Es mes elegido es "+meses[(elec-1)]);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Respuesta no válida");
+            //    }
+            //} while (elec<1|| elec >12);//Si alguna de las dos condiciones se cumple sera TRUE y seguira ejecutando
+
+
+
+            //Hacer la media de 10 valores utilizando un array.
+
+
 
 
 
