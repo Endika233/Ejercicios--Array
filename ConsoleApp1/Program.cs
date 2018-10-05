@@ -44,24 +44,56 @@ namespace ConsoleApp1
             //Console.WriteLine(arrayPal[0]);
 
 
-            //Crear un array de 10 ints. Usar un for para asignar los valores de 20 a 11 a las 10 posiciones 
-            //(en orden descendente). Usar un for para mostrar los 10 valores en pantalla.
-            int[] arrayNum=new int [10];
-            int num = 20;
-            for(int i = 0; i < 10; i++)
+            ////Crear un array de 10 ints. Usar un for para asignar los valores de 20 a 11 a las 10 posiciones 
+            ////(en orden descendente). Usar un for para mostrar los 10 valores en pantalla.
+            //int[] arrayNum=new int [10];//Declaramos el array y le damos un "valor" de 10 espacios (si no no dejaria usarlo en el for)
+            //int num = 20;
+            //for(int i = 0; i < 10; i++)
+            //{
+            //    arrayNum[i] = num;
+            //    num = num - 1;
+            //}
+            //for(int j = 0; j < 10; j++)
+            //{
+            //    Console.WriteLine(arrayNum[j]);
+            //}
+
+
+
+            ////Crear un array de 3 ints. Usar un for para pedir al usuario que introduzca valores
+            ////a cada una de las posiciones. Usar otro for para mostrarlos en pantalla.
+            //int[] arrayNums = new int[3];
+            //Console.WriteLine("Introduzca un valor");
+            //arrayNums[0] = Int32.Parse(Console.ReadLine());
+            //for(int i = 1; i < arrayNums.Length; i++)
+            //{
+            //    Console.WriteLine("Introduza otro valor");
+            //    arrayNums[i] = Int32.Parse(Console.ReadLine());
+            //}
+            //Console.Write("Los valores introducidos son ");
+            //for(int j = 0; j < arrayNums.Length; j++)
+            //{
+            //    if (j == 2)//Cuando llegue al ultimo valor(si tiene 3 espacios sera el 2 al contar desde 0)
+            //    {
+            //        Console.Write("y ");
+            //    }
+            //    Console.Write(arrayNums[j] + " ");
+            //}
+
+
+
+            //Crear un array de 3 ints. Usar un for para pedir al usuario que introduzca valores 
+            //a cada una de las posiciones. Mirar los valores del array una vez tenga los 3 valores 
+            //y mostrar en pantalla el más pequeño.
+            int[] arrayNums = new int[3];
+            Console.WriteLine("Introduzca un valor");
+            arrayNums[0] = Int32.Parse(Console.ReadLine());
+            for (int i = 1; i < arrayNums.Length; i++)
             {
-                arrayNum[i] = num;
-                num = num - 1;
-            }
-            for(int j = 0; j < 10; j++)
-            {
-                Console.WriteLine(arrayNum[j]);
+                Console.WriteLine("Introduza otro valor");
+                arrayNums[i] = Int32.Parse(Console.ReadLine());
             }
 
-
-
-            //Crear un array de 3 ints. Usar un for para pedir al usuario que introduzca valores
-            //a cada una de las posiciones. Usar otro for para mostrarlos en pantalla.
 
 
 
