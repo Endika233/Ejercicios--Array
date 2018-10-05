@@ -275,10 +275,15 @@ namespace ConsoleApp1
                 {
                     if (array[i] == j)
                     {
-                        arrayNum[j-1] = arrayNum[j-1] + 1;
+                        arrayNum[j-1] = arrayNum[j-1] + 1;//HAY QUE RESTAR 1 PORQUE EMPIEZA EN 1 Y NO 0                        
                     }
                 }
                 Console.WriteLine(i+"\t"+array[i]);
+            }
+            Console.WriteLine("\t\tTABLA EQUIVALENCIAS");
+            for(int k = 1; k <= arrayNum.Length; k++)
+            {
+                Console.WriteLine(k + "\t" +arrayNum[k]);
             }
          
 
